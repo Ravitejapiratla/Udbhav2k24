@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+        .header-image {
+            width: 100%;
+            height: auto; /* Maintain aspect ratio */
+        }
+        form {
+            padding: 20px; /* Add some padding around the form */
+        }
+        .payment-section {
+            margin-top: 20px; /* Space above payment section */
+            padding: 10px;
+            border: 1px solid #ccc; /* Simple border for the section */
+        }
+    </style>
+</head>
+<body>
+
+    <img src="https://i.ytimg.com/vi/7wUDdvKIwQU/sddefault.jpg" alt="Event Image" class="header-image">
+    
+    <form>
+        Enter your name: <input type="text" name="name" required>
+        <br>
+        Enter your college name: <input type="text" name="college" required>
+        <br>
+        Select your gender: 
+        <input type="radio" name="gender" value="male" required> Male 
+        <input type="radio" name="gender" value="female"> Female
+        <br>
+        Select your participating event: 
+        <input type="checkbox" name="event" value="Young manager"> Young Manager <br>
+        <input type="checkbox" name="event" value="Market makers"> Market Makers <br>
+        <input type="checkbox" name="event" value="Team building"> Team Building <br>
+        <input type="checkbox" name="event" value="Business Quiz"> Business Quiz <br>
+        <input type="checkbox" name="event" value="Treasure Hunt"> Treasure Hunt <br>
+        <input type="checkbox" name="event" value="Solo dance"> Solo Dance <br>
+        <input type="checkbox" name="event" value="Group dance"> Group Dance <br>
+        <input type="checkbox" name="event" value="Reels making"> Reels Making <br>
+        <input type="checkbox" name="event" value="Photography"> Photography <br>
+        <input type="checkbox" name="event" value="General Quiz"> General Quiz <br>
+        
+        Select your graduation:
+        <select multiple name="graduation">
+            <option value="Degree">Degree</option>
+            <option value="B.Tech">B.Tech</option>
+            <option value="MBA">MBA</option>
+            <option value="MCA">MCA</option>
+            <option value="M.Sc">M.Sc</option>
+        </select>
+        <br>
+        
+        Enter your address: <textarea name="address" rows="4" cols="50"></textarea>
+        <br>
+        
+        <div class="payment-section">
+            <h3>Payment Details</h3>
+            <p>Amount: ₹200</p>
+            <p>Scan to pay:</p>
+            <input type="text" placeholder="Enter payment details or scan QR code" required>
+            <br>
+            <button type="button">Pay Now</button>
+        </div>
+        
+        <input type="submit" value="Register">
+        <input type="submit" value="Login">
+    </form>
+
+</body>
+</html>
